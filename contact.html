@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | WorkHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- SHARED CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- ================= NAVIGATION BAR ================= -->
+<header class="main-header">
+    <div class="logo">WorkHub</div>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+
+        <!-- SERVICES DROPDOWN -->
+        <div class="dropdown">
+            <a href="#">Services ▾</a>
+            <div class="dropdown-menu vertical">
+                <a href="creative-solutions.html">Creative Solutions</a>
+                <a href="physical-marketing.html">Physical Marketing</a>
+            </div>
+        </div>
+
+        <!-- COMPANY DROPDOWN -->
+        <div class="dropdown">
+            <a href="#">Company ▾</a>
+            <div class="dropdown-menu vertical">
+                <a href="about.html">About Us</a>
+                <a href="features.html">Platform Features</a>
+                <a href="fulfillment-policy.html">Fulfillment Policy</a>
+            </div>
+        </div>
+
+        <a href="contact.html" class="active">Contact</a>
+        <a href="login.html" class="btn-nav">Login</a>
+    </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="container">
+    <h2>Contact Us</h2>
+    <p>
+        Have questions, feedback, or need support? Reach out to the WorkHub team and we’ll be happy to assist you.
+    </p>
+
+    <div class="contact-grid">
+
+        <!-- CONTACT DETAILS -->
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p><i class="fa-solid fa-envelope"></i> support@workhub@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Kampala, Uganda</p>
+
+            <p>
+                We aim to respond to all inquiries within <strong>24–48 hours</strong> during working days.
+            </p>
+        </div>
+
+        <!-- CONTACT FORM -->
+       <section class="container">
+    <h2>Contact WorkHub</h2>
+    <p class="muted">Send us a message and we will get back to you soon.</p>
+
+    <form class="contact-form card-form">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Enter message subject">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+
+    </form>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>&copy; 2025 WorkHub. All rights reserved.</p>
+</footer>
+
+<!-- PAGE-SPECIFIC JS -->
+<script>
+    function submitForm(event) {
+        event.preventDefault();
+        alert("Thank you for contacting WorkHub. Your message has been received (simulation).");
+    }
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

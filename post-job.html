@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post a Job | WorkHub Employer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- SHARED CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- ================= NAVIGATION BAR ================= -->
+<header class="main-header">
+    <div class="logo">WorkHub Employer</div>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="dashboard-employer.html">Dashboard</a>
+        <a href="post-job.html" class="active">Post Job</a>
+        <a href="applications-employer.html">Applications</a> 
+        <a href="advertise.html">Advertise</a>
+        
+       
+        <a href="logout.html" class="btn-nav">Logout</a>
+    </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="container narrow">
+
+    <h2><i class="fa-solid fa-briefcase"></i> Post a Job Vacancy</h2>
+    <p class="muted">
+        Fill in the details below to publish a job listing for job seekers on WorkHub.
+    </p>
+
+    <!-- JOB POST FORM -->
+    <form class="card-form">
+
+        <label><i class="fa-solid fa-building"></i> Company Name</label>
+        <input type="text" placeholder="Enter company name" required>
+
+        <label><i class="fa-solid fa-user-tie"></i> Job Title</label>
+        <input type="text" placeholder="e.g. Sales Manager, Software Developer" required>
+
+        <label><i class="fa-solid fa-location-dot"></i> Job Location</label>
+        <input type="text" placeholder="City / Country or Remote" required>
+
+        <label><i class="fa-solid fa-money-bill-wave"></i> Salary Range</label>
+        <input type="text" placeholder="e.g. UGX 1,000,000 - 2,000,000">
+
+        <label><i class="fa-solid fa-clock"></i> Employment Type</label>
+        <select required>
+            <option value="">Select employment type</option>
+            <option>Full Time</option>
+            <option>Part Time</option>
+            <option>Contract</option>
+            <option>Internship</option>
+            <option>Remote</option>
+        </select>
+
+        <label><i class="fa-solid fa-graduation-cap"></i> Required Experience</label>
+        <select>
+            <option>No Experience</option>
+            <option>1-2 Years</option>
+            <option>3-5 Years</option>
+            <option>5+ Years</option>
+        </select>
+
+        <label><i class="fa-solid fa-list-check"></i> Job Responsibilities</label>
+        <textarea rows="4" placeholder="List key responsibilities..." required></textarea>
+
+        <label><i class="fa-solid fa-lightbulb"></i> Required Skills</label>
+        <textarea rows="3" placeholder="List required skills (communication, coding, marketing, etc.)"></textarea>
+
+        <label><i class="fa-solid fa-calendar"></i> Application Deadline</label>
+        <input type="date">
+
+        <button type="submit" class="btn-primary">
+            Publish Job
+        </button>
+
+        <p class="form-note">
+            <strong>Note:</strong> This is a frontend prototype. Jobs will appear publicly once backend is connected.
+        </p>
+
+    </form>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="main-footer">
+    <p>&copy; 2025 WorkHub. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing | WorkHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- SHARED CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== SHARED NAVIGATION ===== -->
+<header class="main-header">
+    <div class="logo">WorkHub</div>
+
+    <nav class="main-nav" id="mainNav">
+
+        <!-- MAIN LINKS -->
+        <a href="index.html">Home</a>
+        <a href="pricing.html" class="active">Pricing</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- SERVICES DROPDOWN -->
+        <div class="dropdown">
+            <a href="#">Services ▾</a>
+            <div class="dropdown-menu vertical">
+                <a href="creative-solutions.html">Creative Solutions</a>
+                <a href="physical-marketing.html">Physical Marketing</a>
+            </div>
+        </div>
+
+        <!-- COMPANY DROPDOWN -->
+        <div class="dropdown">
+            <a href="#">Company ▾</a>
+            <div class="dropdown-menu vertical">
+                <a href="about.html">About Us</a>
+                <a href="features.html">Features</a>
+                <a href="fulfillment-policy.html">Fulfillment Policy</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="container">
+
+    <section class="welcome">
+        <h2>WorkHub Pricing Plans</h2>
+        <p class="muted">
+            Choose a plan that fits your business needs. Upgrade anytime.
+        </p>
+    </section>
+
+    <section class="pricing-grid">
+
+        <!-- STARTER PLAN -->
+        <div class="pricing-card">
+            <h3>Starter</h3>
+            <p class="price">UGX 50,000</p>
+            <ul>
+                <li>Post up to 3 jobs</li>
+                <li>Basic employer dashboard</li>
+                <li>Standard support</li>
+            </ul>
+            <a href="login.html" class="btn">Get Started</a>
+        </div>
+
+        <!-- PRO PLAN -->
+        <div class="pricing-card highlight">
+            <h3>Pro</h3>
+            <p class="price">UGX 95,000</p>
+            <ul>
+                <li>Post unlimited jobs</li>
+                <li>Advanced dashboard tools</li>
+                <li>Featured job listings</li>
+                <li>Priority support</li>
+            </ul>
+            <a href="login.html" class="btn">Choose Pro</a>
+        </div>
+
+        <!-- PREMIUM PLAN -->
+        <div class="pricing-card">
+            <h3>Premium</h3>
+            <p class="price">UGX 135,000</p>
+            <ul>
+                <li>Everything in Pro</li>
+                <li>Business promotion & ads</li>
+                <li>Analytics & insights</li>
+                <li>Dedicated account support</li>
+            </ul>
+            <a href="login.html" class="btn">Go Premium</a>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="main-footer">
+    <p>&copy; 2025 WorkHub. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

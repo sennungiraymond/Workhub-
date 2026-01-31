@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advertise Your Business | WorkHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- SHARED CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- ================= NAVIGATION BAR ================= -->
+<header class="main-header">
+    <div class="logo">WorkHub</div>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="dashboard-employer.html">Dashboard</a>
+        <a href="applications-employer.html">Applications</a>
+        <a href="post-job.html">Post Job</a>
+        <a href="advertise.html" class="active">Advertise</a>
+            
+        <a href="logout.html" class="btn-nav">Logout</a>
+    </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="container narrow">
+
+    <h2>Advertise Your Business</h2>
+    <p class="intro">
+        Promote your business or services on WorkHub and reach job seekers,
+        employers, and professionals across the platform.
+    </p>
+
+    <form class="card-form">
+
+        <label>
+            <i class="fa-solid fa-building"></i> Business Name
+        </label>
+        <input type="text" placeholder="Enter your business name" required>
+
+        <label>
+            <i class="fa-solid fa-envelope"></i> Business Email
+        </label>
+        <input type="email" placeholder="Enter business email" required>
+
+        <label>
+            <i class="fa-solid fa-bullhorn"></i> Advertisement Type
+        </label>
+        <select required>
+            <option value="">Select advertisement type</option>
+            <option>Homepage Banner</option>
+            <option>Featured Business Listing</option>
+            <option>Social Media Promotion</option>
+            <option>Email Campaign</option>
+            <option>Sponsored Job Post</option>
+        </select>
+
+        <label>
+            <i class="fa-solid fa-calendar"></i> Advertisement Duration
+        </label>
+        <select required>
+            <option value="">Select duration</option>
+            <option>7 Days</option>
+            <option>14 Days</option>
+            <option>30 Days</option>
+        </select>
+
+        <label>
+            <i class="fa-solid fa-image"></i> Upload Logo / Banner
+        </label>
+        <input type="file">
+
+        <label>
+            <i class="fa-solid fa-align-left"></i> Advertisement Description
+        </label>
+        <textarea rows="4"
+                  placeholder="Brief description of your business or promotion"
+                  required></textarea>
+
+        <!-- PAYMENT PLACEHOLDER -->
+        <div class="info-box">
+            <h3>
+                <i class="fa-solid fa-mobile-screen"></i>
+                Payment Method
+            </h3>
+            <p>
+                Mobile Money payment integration will be enabled once pricing
+                and payment providers are configured.
+            </p>
+        </div>
+
+        <button type="submit" class="btn-primary">
+            Submit Advertisement Request
+        </button>
+
+        <p class="form-note">
+            <strong>Note:</strong> This is a frontend prototype. Advertisement submissions
+            and payments will be processed once backend systems are implemented.
+        </p>
+
+    </form>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="main-footer">
+    <p>&copy; 2026 WorkHub. All rights reserved.</p>
+</footer>
+
+</body><script src="js/script.js"></script>
+
+</html>

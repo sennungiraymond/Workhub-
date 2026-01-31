@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | WorkHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME (keep this, it's external icons) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- SHARED GLOBAL CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION BAR ================= -->
+<header class="main-header">
+    <div class="logo">WorkHub Admin</div>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="dashboard-admin.html" class="active">Dashboard</a>
+
+        <!-- SERVICES DROPDOWN -->
+        <div class="dropdown">
+            <a href="#">Services ▾</a>
+            <div class="dropdown-menu vertical">
+                <a href="creative-solutions.html">Creative Solutions</a>
+                <a href="physical-marketing.html">Physical Marketing</a>
+            </div>
+        </div>
+
+        <!-- COMPANY DROPDOWN -->
+        <div class="dropdown">
+            <a href="#">Company ▾</a>
+            <div class="dropdown-menu vertical">
+                <a href="about.html">About Us</a>
+                <a href="features.html">Platform Features</a>
+                <a href="fulfillment-policy.html">Fulfillment Policy</a>
+            </div>
+        </div>
+
+        <a href="contact.html">Contact</a>
+        <a href="logout.html" class="btn-nav">Logout</a>
+    </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<!-- ================= DASHBOARD CONTENT ================= -->
+<div class="container">
+
+    <!-- WELCOME -->
+    <section class="welcome">
+        <h2>Administrator Dashboard 👋</h2>
+        <p class="muted">
+            Monitor platform activity, manage users, and maintain quality control across WorkHub.
+        </p>
+    </section>
+
+    <section class="grid">
+
+        <!-- USER MANAGEMENT -->
+        <div class="card">
+            <h3><i class="fa-solid fa-users"></i> User Management</h3>
+            <p class="muted">
+                View and manage registered job seekers and employers.
+            </p>
+            <p class="muted">
+                Activate, suspend, or review user accounts.
+            </p>
+            <a href="#" class="btn">View Users</a>
+        </div>
+
+        <!-- JOB MODERATION -->
+        <div class="card">
+            <h3><i class="fa-solid fa-clipboard-check"></i> Job Post Moderation</h3>
+            <p class="muted">
+                Review job posts before they go live.
+            </p>
+            <p class="muted">
+                No job posts awaiting approval.
+            </p>
+        </div>
+
+        <!-- EMPLOYER VERIFICATION -->
+        <div class="card">
+            <h3><i class="fa-solid fa-building-shield"></i> Employer Verification</h3>
+            <p class="muted">
+                Verify employer profiles to ensure legitimacy.
+            </p>
+            <p class="muted">
+                Pending verification requests will appear here.
+            </p>
+        </div>
+
+        <!-- ADVERTISEMENTS -->
+        <div class="card">
+            <h3><i class="fa-solid fa-bullhorn"></i> Advertisement Management</h3>
+            <p class="muted">
+                Review and approve business advertisements.
+            </p>
+            <p class="muted">
+                No advertisement requests pending.
+            </p>
+        </div>
+
+        <!-- PAYMENTS -->
+        <div class="card">
+            <h3><i class="fa-solid fa-wallet"></i> Payments Overview</h3>
+            <p class="muted">
+                Monitor subscription plans and advertisement payments.
+            </p>
+            <p class="muted">
+                Mobile Money integration will be configured later.
+            </p>
+        </div>
+
+        <!-- ANALYTICS -->
+        <div class="card">
+            <h3><i class="fa-solid fa-chart-line"></i> Platform Analytics</h3>
+            <p class="muted">
+                Track platform performance indicators:
+            </p>
+            <p class="muted">
+                • Total users<br>
+                • Jobs posted<br>
+                • Application volume<br>
+                • Traffic sources
+            </p>
+            <p class="muted">
+                Analytics will display once activity is recorded.
+            </p>
+        </div>
+
+        <!-- CONTENT MANAGEMENT -->
+        <div class="card">
+            <h3><i class="fa-solid fa-file-lines"></i> Content & Policies</h3>
+            <p class="muted">
+                Update platform pages such as policies and services.
+            </p>
+            <a href="#" class="btn secondary">Manage Content</a>
+        </div>
+
+        <!-- SECURITY -->
+        <div class="card">
+            <h3><i class="fa-solid fa-shield-halved"></i> Security & Compliance</h3>
+            <p class="muted">
+                Monitor platform activity and enforce rules.
+            </p>
+            <p class="muted">
+                Ensures data protection and platform integrity.
+            </p>
+        </div>
+
+    </section>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="main-footer">
+    <p>&copy; 2025 WorkHub. All rights reserved.</p>
+</footer>
+
+<!-- SHARED GLOBAL JS -->
+<script src="js/main.js"></script>
+</body>
+</html>

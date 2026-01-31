@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Listings | WorkHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- ================= NAVIGATION BAR ================= -->
+<header class="main-header">
+    <div class="logo">WorkHub</div>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="dashboard-jobseeker.html">Dashboard</a>
+        <a href="jobs.html" class="active">Jobs</a>
+        <a href="resume-upload.html">Resume</a>
+        <a href="messages-jobseeker.html">Messages</a>
+        <a href="profile-jobseeker.html">Profile</a>
+       
+        <a href="logout.html" class="btn-nav">Logout</a>
+    </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="container">
+
+    <h1>Available Job Listings</h1>
+    <p class="notice">
+        Notice: Jobs will be displayed here once posted by employers. Please check back later.
+    </p>
+
+    <!-- Search Section (optional for future implementation) -->
+    <section class="job-search">
+        <input type="text" placeholder="Search job title or keyword">
+        <input type="text" placeholder="Location">
+        <button class="btn-primary">Search Jobs</button>
+    </section>
+
+    <!-- Job List Section -->
+    <section class="job-list">
+        <div class="empty-state">
+            <h2>No Jobs Available</h2>
+            <p>
+                Currently, there are no job postings. Employers will post available opportunities soon.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>© 2026 WorkHub. All rights reserved.</p>
+</footer>
+
+<!-- Shared JavaScript -->
+
+<script src="js/main.js"></script>
+</body>
+</html>

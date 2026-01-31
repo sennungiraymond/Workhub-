@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile | WorkHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- SHARED CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- ================= NAVIGATION BAR ================= -->
+<header class="main-header">
+    <div class="logo">WorkHub</div>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="dashboard-jobseeker.html">Dashboard</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="resume-upload.html">Resume</a>
+        <a href="messages-jobseeker.html">Messages</a>
+        <a href="profile-jobseeker.html" class="active">My Profile</a>
+
+        <a href="logout.html" class="btn-nav">Logout</a>
+    </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<!-- ================= PROFILE PAGE CONTENT ================= -->
+<main class="container narrow">
+
+    <h2><i class="fa-solid fa-user"></i> My Profile</h2>
+    <p class="muted">Update your personal information to attract employers.</p>
+
+    <form class="card-form">
+
+        <!-- PROFILE PICTURE -->
+        <label><i class="fa-solid fa-image"></i> Profile Picture</label>
+        <input type="file">
+
+        <!-- BASIC INFORMATION -->
+        <label><i class="fa-solid fa-user"></i> Full Name</label>
+        <input type="text" placeholder="Enter your full name">
+
+        <label><i class="fa-solid fa-envelope"></i> Email Address</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label><i class="fa-solid fa-phone"></i> Phone Number</label>
+        <input type="tel" placeholder="+256 xxx xxx xxx">
+
+        <label><i class="fa-solid fa-location-dot"></i> Location</label>
+        <input type="text" placeholder="City, Country">
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <label><i class="fa-solid fa-file-lines"></i> Professional Summary</label>
+        <textarea rows="4" placeholder="Brief summary about your skills and career goals"></textarea>
+
+        <!-- SKILLS -->
+        <label><i class="fa-solid fa-star"></i> Skills</label>
+        <textarea rows="3" placeholder="e.g., Web Development, Graphic Design, Accounting, Customer Service"></textarea>
+
+        <!-- EDUCATION -->
+        <label><i class="fa-solid fa-graduation-cap"></i> Education</label>
+        <textarea rows="3" placeholder="Your education background"></textarea>
+
+        <!-- WORK EXPERIENCE -->
+        <label><i class="fa-solid fa-briefcase"></i> Work Experience</label>
+        <textarea rows="4" placeholder="Previous jobs, internships, or volunteering"></textarea>
+
+        <!-- CV / RESUME UPLOAD -->
+        <label><i class="fa-solid fa-file-pdf"></i> Upload CV / Resume</label>
+        <input type="file">
+
+        <!-- SAVE BUTTON -->
+        <button type="submit" class="btn-primary">Save Profile</button>
+
+        <p class="form-note">
+            Note: This is a frontend prototype. Profile data will be saved when backend is implemented.
+        </p>
+
+    </form>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="main-footer">
+    <p>&copy; 2026 WorkHub. All rights reserved.</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

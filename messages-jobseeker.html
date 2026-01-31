@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages | WorkHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- ===== SHARED NAVIGATION (LOGGED IN) ===== -->
+<header class="main-header">
+    <div class="logo">WorkHub</div>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="dashboard-jobseeker.html">Dashboard</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="resume-upload.html">Resume</a>
+        <a href="messages-jobseeker.html" class="active">Messages</a>
+        <a href="profile-jobseeker.html">Profile</a>
+        <a href="logout.html" class="btn-nav">Logout</a>
+    </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="container">
+
+    <!-- PAGE TITLE -->
+    <section class="welcome">
+        <h2>Messages & Application Updates 📩</h2>
+        <p class="muted">
+            Employers will notify you here about your job application progress.
+        </p>
+    </section>
+
+    <!-- MESSAGES LIST -->
+    <section class="messages-list grid-messages">
+
+        <!-- MESSAGE CARD -->
+        <div class="message-card box-green">
+            <h3><i class="fa-solid fa-eye"></i> Application Reviewed</h3>
+            <p class="muted">
+                Your application for <strong>Junior Web Developer</strong> at <strong>TechNova Ltd</strong> has been reviewed.
+            </p>
+            <span class="message-status reviewed">Status: Reviewed</span>
+        </div>
+
+        <!-- MESSAGE CARD -->
+        <div class="message-card box-green">
+            <h3><i class="fa-solid fa-user-check"></i> Shortlisted</h3>
+            <p class="muted">
+                Congratulations! You have been shortlisted for <strong>Marketing Assistant</strong> at <strong>Bright Media</strong>.
+            </p>
+            <span class="message-status shortlisted">Status: Shortlisted</span>
+        </div>
+
+        <!-- MESSAGE CARD -->
+        <div class="message-card box-green">
+            <h3><i class="fa-solid fa-calendar"></i> Interview Invitation</h3>
+            <p class="muted">
+                You are invited for an interview for <strong>IT Support Technician</strong> at <strong>Global Solutions</strong>.
+                Check your email for interview details.
+            </p>
+            <span class="message-status interview">Status: Interview Scheduled</span>
+        </div>
+
+        <!-- EMPTY STATE -->
+        <div class="message-card box-green empty-message">
+            <h3>No New Messages</h3>
+            <p>
+                New employer updates will appear here after you apply for jobs.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="main-footer">
+    <p>&copy; 2026 WorkHub. All rights reserved.</p>
+</footer>
+
+<!-- SHARED JS -->
+<script src="js/main.js"></script>
+</body>
+</html>
